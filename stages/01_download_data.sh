@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-mkdir -p ./downloads
+mkdir -p ./download
 
-wget -P downloads/ https://go.drugbank.com/releases/5-1-12/downloads/all-drugbank-vocabulary
+wget -P download/ https://go.drugbank.com/releases/5-1-12/downloads/all-drugbank-vocabulary
