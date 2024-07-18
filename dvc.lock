@@ -1,2 +1,28 @@
 schema: '2.0'
-stages: {}
+stages:
+  download:
+    cmd: bash stages/01_download_data.sh
+    deps:
+    - path: ./stages/01_download_data.sh
+      hash: md5
+      md5: 3b3cdb64ed7e6076607a1413b7339478
+      size: 161
+    outs:
+    - path: download/
+      hash: md5
+      md5: 9149310b50b826122fb228fa5b005862.dir
+      size: 948272
+      nfiles: 1
+  process:
+    cmd: python3 stages/02_process_data.py
+    deps:
+    - path: ./stages/02_process_data.py
+      hash: md5
+      md5: bac9493b34c7438baccc563420c4232e
+      size: 739
+    outs:
+    - path: brick/
+      hash: md5
+      md5: 3637d8e2b8fc58a3654d6711c07b6294.dir
+      size: 1449305
+      nfiles: 1
