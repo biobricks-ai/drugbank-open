@@ -18,8 +18,8 @@ stages:
     deps:
     - path: ./stages/02_process_data.py
       hash: md5
-      md5: bac9493b34c7438baccc563420c4232e
-      size: 739
+      md5: b50ce814ba8bed11a7ddfc0d100e92a7
+      size: 715
     outs:
     - path: brick/
       hash: md5
